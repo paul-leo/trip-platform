@@ -1,0 +1,40 @@
+---
+labels: ['trip-platform', 'harmony', 'platform']
+description: 'A TripPlatform Harmony platform.'
+---
+
+The Pied Piper platform composition. Composes the Pied Piper platform features into a unified and executable platform.
+
+## Run the platform
+
+Run the Pied Piper platform by running the following commands:
+
+```bash
+bit use trip-platform
+``` 
+
+Run the platform:
+
+```bash
+bit run trip-platform
+```
+
+Your platform is now listening to url shown in the command output.
+
+## Compose aspects
+
+You can create and compose new Aspects to the Pied Piper platform by adding them to the `aspects` property in `trip-platform.bit-app.ts`:
+
+```ts
+import { NewsAspect } from '@pied/news.news';
+
+export const TripPlatform = HarmonyPlatform.from({
+  name: 'trip-platform',
+
+  aspects: [
+    HeaderAspect,
+    // your new platform feature.
+    NewsAspect,
+  ],
+});
+```
