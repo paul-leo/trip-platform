@@ -37,6 +37,20 @@
             }
         }
     },
+    "home": {
+        "name": "home",
+        "scope": "",
+        "version": "",
+        "defaultScope": "nore-work.trip",
+        "mainFile": "index.ts",
+        "rootDir": "trip/home",
+        "config": {
+            "bitdev.symphony/envs/symphony-env@1.0.26": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.symphony/envs/symphony-env"
+            }
+        }
+    },
     "hooks/use-user-list": {
         "name": "hooks/use-user-list",
         "scope": "",
@@ -91,6 +105,20 @@
                 "env": "bitdev.symphony/envs/symphony-env"
             },
             "teambit.semantics/schema": {}
+        }
+    },
+    "train": {
+        "name": "train",
+        "scope": "",
+        "version": "",
+        "defaultScope": "nore-work.trip",
+        "mainFile": "index.ts",
+        "rootDir": "trip/train",
+        "config": {
+            "bitdev.symphony/envs/symphony-env@1.0.26": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.symphony/envs/symphony-env"
+            }
         }
     },
     "trip-platform": {
