@@ -86,6 +86,9 @@ importers:
       '@nore-work/train.envs.react-component-env':
         specifier: 0.0.1
         version: 0.0.1(@babel/core@7.25.7)(@babel/traverse@7.25.7)(encoding@0.1.13)(jest@29.3.1(@types/node@20.12.10))(less@4.2.0)(lightningcss@1.27.0)(terser@5.34.1)(type-fest@3.13.1)(typescript@5.5.3)(webpack-hot-middleware@2.26.1)
+      '@nore-work/train.train-list':
+        specifier: 0.0.0-654de8947f2876b71b7bf3b51fd4533152df5372
+        version: 0.0.0-654de8947f2876b71b7bf3b51fd4533152df5372(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0))(react@18.3.0)
       '@nore-work/train.train-search':
         specifier: 0.0.0-7ac87e40e543a8a4ad410970a04bf3196cb95a04
         version: 0.0.0-7ac87e40e543a8a4ad410970a04bf3196cb95a04(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0))(react@18.3.0)
@@ -4672,6 +4675,12 @@ packages:
 
   '@nore-work/train.envs.react-component-env@0.0.1':
     resolution: {integrity: sha512-afVVCdJNtoKHdrHE2aMNY7LBDUASWY8CeCTznOVq9RDGRjF6NTx42SV3/GDMhpsMqQkw9T2FzbfD/S6t+ZRW2w==}
+
+  '@nore-work/train.train-list@0.0.0-654de8947f2876b71b7bf3b51fd4533152df5372':
+    resolution: {integrity: sha512-zPiaAJSSlkqeZdfmnI04AUeym4875CkzjvpClA5uC77Ms38MrGF5smN3TG1rFBV2qg2JziNt0AfIlqPzlEz4Pg==}
+    peerDependencies:
+      '@testing-library/react': ^16.0.0
+      react: ^17.0.0 || ^18.0.0
 
   '@nore-work/train.train-search@0.0.0-7ac87e40e543a8a4ad410970a04bf3196cb95a04':
     resolution: {integrity: sha512-kzJb7OfahUh+YRU4SzDXYrNPN5Aa7vHdP3v8SYjFxlkMetvt34c01tLBkTZxlJIDjIQDLVR8hkaqHN3Znqci9w==}
@@ -23980,6 +23989,12 @@ snapshots:
       - webpack-cli
       - webpack-hot-middleware
       - webpack-plugin-serve
+
+  '@nore-work/train.train-list@0.0.0-654de8947f2876b71b7bf3b51fd4533152df5372(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0))(react@18.3.0)':
+    dependencies:
+      '@learnbit/styling.config.tailwind': 0.0.2
+      '@testing-library/react': 16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0)
+      react: 18.3.0
 
   '@nore-work/train.train-search@0.0.0-7ac87e40e543a8a4ad410970a04bf3196cb95a04(@testing-library/react@16.0.1(@testing-library/dom@10.4.0)(@types/react-dom@18.3.0)(@types/react@18.3.0)(react-dom@18.3.0(react@18.3.0))(react@18.3.0))(react@18.3.0)':
     dependencies:

@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { useState } from 'react';
 import '@learnbit/styling.config.tailwind/globals.tailwind.css';
-import TrainSearch from "@nore-work/train.train-search";
+import { TrainSearch } from '@nore-work/train.train-search';
 export type HomeRootProps = {
   /**
    * sets the component children.
@@ -230,11 +230,11 @@ export const HomeRoot = () => {
           setTravelType={setTravelType}
           setTripType={setTripType}
         /> */}
-        <TrainSearch  onSearch={
-          (data) => {
+        <TrainSearch
+          onSearch={(data) => {
             console.log(data);
-          }
-        }/>
+          }}
+        />
       </div>
       <QuickAccess />
       <Promotion />
@@ -242,4 +242,3 @@ export const HomeRoot = () => {
     </div>
   );
 };
-
