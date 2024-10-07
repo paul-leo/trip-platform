@@ -3,7 +3,7 @@ import {
   SymphonyPlatformAspect,
   SymphonyPlatformBrowser,
 } from '@bitdev/symphony.symphony-platform';
-
+import { HomeRoot } from '@nore-work/trip.home-root';
 export class HomeBrowser {
   constructor(private config: HomeConfig) {}
 
@@ -20,7 +20,7 @@ export class HomeBrowser {
       {
         path: '/',
         component: () => {
-          return <div>这是首页</div>;
+          return <HomeRoot></HomeRoot>;
         },
       },
     ]);

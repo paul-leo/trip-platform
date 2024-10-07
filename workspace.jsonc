@@ -57,6 +57,8 @@
         "@bitdesign/sparks.layout.flex": "^0.0.4",
         "@bitdesign/sparks.typography.heading": "^0.0.4",
         "@bitdesign/sparks.typography.text": "^0.0.4",
+        "@bitdev/general.envs.bit-env": "^1.0.13",
+        "@bitdev/harmony.harmony-env": "^2.0.29",
         "@bitdev/harmony.harmony-platform": "^2.0.7",
         "@bitdev/harmony.preview.slot-preview": "^0.0.3",
         "@bitdev/harmony.runtimes.browser-runtime": "^0.0.48",
@@ -66,10 +68,16 @@
         "@bitdev/symphony.aspects.header": "^1.0.3",
         "@bitdev/symphony.backends.backend-server": "^0.0.13",
         "@bitdev/symphony.envs.symphony-env": "^1.0.26",
+        "@bitdev/symphony.generators.symphony-starters": "^0.0.4",
+        "@bitdev/symphony.generators.symphony-templates": "^1.0.2",
         "@bitdev/symphony.symphony-platform": "^1.0.5",
+        "@learnbit/styling.config.tailwind": "^0.0.2",
+        "@nore-work/train.train-list": "0.0.0-654de8947f2876b71b7bf3b51fd4533152df5372",
+        "@nore-work/train.train-search": "0.0.0-7ac87e40e543a8a4ad410970a04bf3196cb95a04",
         "@pied/design.content.card": "^1.0.5",
         "@pied/design.pied-theme": "^1.0.5",
         "@pied/pied-piper.testing.mock-provider": "^1.0.5",
+        "@teambit/react.react-env": "^1.0.109",
         "eslint": "^7.28.0",
         "graphql-tag": "^2.12.6"
       },
@@ -81,5 +89,6 @@
   "teambit.workspace/workspace-config-files": {
     "enableWorkspaceConfigWrite": true
   },
-  "nore-work.trip/trip-platform": {}
+  "nore-work.trip/trip-platform": {},
+  "nore-work.train/envs/react-component-env@0.0.1": {}
 }
