@@ -2,7 +2,7 @@ import { HarmonyPlatform } from '@bitdev/harmony.harmony-platform';
 import { NodeJSRuntime } from '@bitdev/harmony.runtimes.nodejs-runtime';
 import { BrowserRuntime } from '@bitdev/harmony.runtimes.browser-runtime';
 import { SymphonyPlatformAspect } from '@bitdev/symphony.symphony-platform';
-// import { TrainAspect } from '@nore-work/trip.train';
+import { TrainAspect } from '@nore-work/trip.train';
 import { HomeAspect } from '@nore-work/trip.home';
 
 /**
@@ -23,7 +23,7 @@ export const TripPlatform = HarmonyPlatform.from({
   runtimes: [new BrowserRuntime(), new NodeJSRuntime()],
 
   aspects: [
-    // TrainAspect,
+    TrainAspect,
     HomeAspect,
   ],
 });

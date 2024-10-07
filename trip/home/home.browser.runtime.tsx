@@ -4,15 +4,16 @@ import {
   SymphonyPlatformBrowser,
 } from '@bitdev/symphony.symphony-platform';
 import { HomeRoot } from '@nore-work/trip.home-root';
+import { TrainAspect, TrainBrowser } from '@nore-work/trip.train';
 export class HomeBrowser {
   constructor(private config: HomeConfig) {}
 
-  static dependencies = [SymphonyPlatformAspect];
+  static dependencies = [SymphonyPlatformAspect, TrainAspect];
 
   static defaultConfig: HomeConfig = {};
 
   static async provider(
-    [symphonyPlatform]: [SymphonyPlatformBrowser],
+    [symphonyPlatform, train]: [SymphonyPlatformBrowser, TrainBrowser],
     config: HomeConfig
   ) {
     const home = new HomeBrowser(config);
@@ -20,7 +21,7 @@ export class HomeBrowser {
       {
         path: '/',
         component: () => {
-          return <HomeRoot></HomeRoot>;
+          return <HomeRoot deps={{ train }}></HomeRoot>;
         },
       },
     ]);

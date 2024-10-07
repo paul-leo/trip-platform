@@ -27,6 +27,10 @@ export class TrainBrowser {
 
     return train;
   }
+  goToList(data) {
+    console.log('goToList');
+    // history.pushState(data, "", "/train");
+  }
 }
 
 export default TrainBrowser;

@@ -6,7 +6,9 @@ export type HomeRootProps = {
   /**
    * sets the component children.
    */
-  children?: ReactNode;
+  deps?: {
+    train: any;
+  };
 };
 
 // Header Component
@@ -213,11 +215,12 @@ const BottomNavigation = () => {
 };
 
 // Main App Component
-export const HomeRoot = () => {
+export const HomeRoot = (props: HomeRootProps) => {
+  const { deps } = props;
   const [activeTab, setActiveTab] = useState('机票');
   const [travelType, setTravelType] = useState('因公出行');
   const [tripType, setTripType] = useState('往返');
-
+  const { train } = deps;
   return (
     <div className="bg-gray-100 min-h-screen pb-16">
       <Header />
@@ -232,7 +235,7 @@ export const HomeRoot = () => {
         /> */}
         <TrainSearch
           onSearch={(data) => {
-            console.log(data);
+            train?.goToList?.(data)
           }}
         />
       </div>

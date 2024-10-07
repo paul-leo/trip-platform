@@ -73,7 +73,7 @@
         "@bitdev/symphony.symphony-platform": "^1.0.5",
         "@learnbit/styling.config.tailwind": "^0.0.2",
         "@nore-work/train.train-list": "0.0.0-654de8947f2876b71b7bf3b51fd4533152df5372",
-        "@nore-work/train.train-search": "0.0.0-7ac87e40e543a8a4ad410970a04bf3196cb95a04",
+        "@nore-work/train.train-search": "^0.0.2",
         "@pied/design.content.card": "^1.0.5",
         "@pied/design.pied-theme": "^1.0.5",
         "@pied/pied-piper.testing.mock-provider": "^1.0.5",
